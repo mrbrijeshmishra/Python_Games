@@ -10,7 +10,7 @@ def user_input():
     new_word = ["_"]*word_length
     print("Word:","".join(new_word))
 
-    while wrong_attempt < 3 and  len(rand_word) > 0:
+    while wrong_attempt < 3 and word_length > 0:
 
         c = input("Enter guess alphabet:").lower()
         if c in rand_word:
